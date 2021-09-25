@@ -1,0 +1,33 @@
+{
+  "name": "@archival-iiif/presentation-migrator",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@archival-iiif/presentation-builder": "^1.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "ts-node": "^10.2.1"
+  },
+  "description": "Migrates manifests to other IIIF versions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archival-IIIF/presentation-migrator.git"
+  },
+  "keywords": [
+    "IIIF"
+  ],
+  "author": "Archival IIIF",
+  "bugs": {
+    "url": "https://github.com/archival-IIIF/presentation-migrator/issues"
+  },
+  "homepage": "https://github.com/archival-IIIF/presentation-migrator#readme"
+}
