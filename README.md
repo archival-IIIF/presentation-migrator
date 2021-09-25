@@ -28,9 +28,19 @@ yarn add @archival-iiif/presentation-migrator
 **Code**
 
 ```typescript
-import {Manifest} from "@archival-iiif/presentation-builder";
+import {Manifest, Collection} from "@archival-iiif/presentation-builder";
+import {migrateManifestV3ToV2, migrateCollectionV3ToV2, igrateManifestOrCollectionV3ToV2} from "@archival-iiif/presentation-migrator";
 
-new Manifest('https://example.org/iiif/book1/manifest', 'Book 1');
+const manifestV3 = new Manifest('https://example.org/iiif/book1/manifest', 'Book 1');
+let manifestV2 = migrateManifestV3ToV2(m);
+// same result:
+manifestV2 = migrateManifestOrCollectionV3ToV2(m);
+
+const collectionV3 = new Collection(
+    'https://example.org/iiif/collection/top',
+    { "en": [ "Collection for Example Organization" ] }
+);
+const collectionV2 = migrateCollectionV3ToV2(c);
 ```
 
 ## License
