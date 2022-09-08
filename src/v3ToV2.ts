@@ -1,21 +1,9 @@
-import {
-    Base,
-    Resource,
-    Manifest,
-    Service,
-    BaseV2,
-    ManifestV2,
-    CollectionV2,
-    ResourceV2,
-    MediaSequenceV2,
-    SequenceV2,
-    CanvasV2,
-    AnnotationV2,
-    RenderingV2,
-    Collection
-} from "@archival-iiif/presentation-builder";
-import {ExtendedRef, Internationalize, LabelValue, Ref} from "@archival-iiif/presentation-builder/dist/v3/Base";
-import {Metadata} from "@archival-iiif/presentation-builder/dist/v2/Base";
+import {Base, Resource, Manifest, Service, Collection, ExtendedRef, Internationalize, LabelValue, Ref}
+    from "@archival-iiif/presentation-builder/v3";
+import {Base as BaseV2, Manifest as ManifestV2, Collection as CollectionV2, Resource as ResourceV2,
+    MediaSequence as MediaSequenceV2, Sequence as SequenceV2, Canvas as CanvasV2, Annotation as AnnotationV2,
+    Rendering as RenderingV2, Metadata
+} from "@archival-iiif/presentation-builder/v2";
 
 let searchPrefix0: string | undefined = undefined;
 let replacePrefix0: string | undefined = undefined;
